@@ -1,0 +1,47 @@
+{
+  "dir": "ltr",
+  "brand": "IIPHA",
+  "logoAlt": "IIPHA",
+  "email": "info@iipha.org",
+  "copyright": "© 2026 IIPHA",
+  "footerName": "International Independent Iranian Physicians and Healthcare Providers Association",
+  "langLabel": { "en": "EN", "fa": "فارسی" },
+  "nav": { "about": "About", "donate": "Donate" },
+  "about": {
+    "title": "About — IIPHA",
+    "claim": "An association of healthcare professionals of Persian heritage, working on medical issues tied to justice and human rights in Iran.",
+    "orgName": "International Independent Iranian Physicians and Healthcare Providers Association",
+    "lead": "IIPHA is a non-profit organization based in the United States, and is non-partisan.",
+    "visionLabel": "Our vision",
+    "vision": "To build a connected community that creates real opportunities for humanitarian and professional contribution, particularly in response to crises affecting Iran.",
+    "missionLabel": "Our mission",
+    "mission": "To monitor and advocate for healthcare standards, and to translate that advocacy into concrete action.",
+    "workLabel": "Our work",
+    "work": "IIPHA works to unite and give voice to the Iranian diaspora’s civil society, engaging with media, international organizations, and decision-makers on medical issues tied to justice and human rights in Iran.",
+    "contactLabel": "Contact",
+    "contactBody": "For membership, media, or partnership enquiries."
+  },
+  "donate": {
+    "title": "Donate — IIPHA",
+    "claim": "Support our work",
+    "lead": "As a non-profit, we depend on donations and membership fees.",
+    "ways": [
+      {
+        "label": "Become a member",
+        "body": "If you are a healthcare provider outside Iran, the most direct way to help is to become a member."
+      },
+      {
+        "label": "Volunteer",
+        "body": "If you are not a healthcare provider, you can still give your time and professional skills to the work."
+      },
+      {
+        "label": "Donate",
+        "body": "Otherwise, you can donate any amount, starting at $10."
+      }
+    ],
+    "banner": "Contributions go primarily toward the human rights lawyers working with us.",
+    "cta": "Donate",
+    "ctaUrl": "#donate-link-placeholder",
+    "note": "For membership or volunteering, write to info@iipha.org."
+  }
+}

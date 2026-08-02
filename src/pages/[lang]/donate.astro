@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import Orbits from '../../components/Orbits.astro';
+import { copy, langs } from '../../i18n';
+
+export function getStaticPaths() {
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = copy[lang].donate;
+---
+
+<Layout lang={lang} page="donate">
+  <Hero claim={t.claim} lead={t.lead} />
+
+  <section class="ways">
+    <div class="wrap">
+      <div class="ways-row">
+        {t.ways.map((way) => (
+          <div>
+            <h2>{way.label}</h2>
+            <p>{way.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="give">
+    <Orbits class="orbits-give" />
+    <div class="wrap">
+      <p class="give-banner">{t.banner}</p>
+      <a class="give-cta" href={t.ctaUrl}>{t.cta}</a>
+      <p class="give-note">{t.note}</p>
+    </div>
+  </section>
+</Layout>

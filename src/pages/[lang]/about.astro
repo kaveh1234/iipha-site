@@ -1,0 +1,50 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import Orbits from '../../components/Orbits.astro';
+import { copy, langs } from '../../i18n';
+
+export function getStaticPaths() {
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = copy[lang].about;
+---
+
+<Layout lang={lang} page="about">
+  <Hero claim={t.claim} orgName={t.orgName} lead={t.lead} />
+
+  <section class="vision">
+    <Orbits class="orbits-vision" />
+    <div class="wrap">
+      <div class="vision-label">{t.visionLabel}</div>
+      <p>{t.vision}</p>
+    </div>
+  </section>
+
+  <section class="pillars">
+    <div class="wrap">
+      <div>
+        <h2>{t.missionLabel}</h2>
+        <div class="pillar-rule"></div>
+        <p>{t.mission}</p>
+      </div>
+      <div>
+        <h2>{t.workLabel}</h2>
+        <div class="pillar-rule"></div>
+        <p>{t.work}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="wrap">
+      <div class="contact-label">{t.contactLabel}</div>
+      <div class="contact-body">
+        <a href={`mailto:${copy[lang].email}`}>{copy[lang].email}</a>
+        <p>{t.contactBody}</p>
+      </div>
+    </div>
+  </section>
+</Layout>

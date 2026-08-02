@@ -1,0 +1,23 @@
+---
+import { path } from '../i18n';
+
+// Static hosting can't negotiate language server-side, so the choice happens
+// in the browser. Falls back to English when JS is off.
+const en = path('/en/about');
+const fa = path('/fa/about');
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex" />
+    <noscript><meta http-equiv="refresh" content={`0; url=${en}`} /></noscript>
+    <script is:inline define:vars={{ en, fa }}>
+      var wantsFa = (navigator.languages || [navigator.language]).some(function (l) {
+        return l.toLowerCase().startsWith('fa');
+      });
+      location.replace(wantsFa ? fa : en);
+    </script>
+  </head>
+  <body></body>
+</html>

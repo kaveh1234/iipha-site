@@ -1,0 +1,14 @@
+---
+import Orbits from './Orbits.astro';
+
+const { claim, orgName, lead } = Astro.props;
+---
+
+<section class="hero">
+  <Orbits variant="hero" class="orbits-hero" />
+  <div class="wrap">
+    <h1>{claim}</h1>
+    {orgName && <p class="hero-org">{orgName}</p>}
+    <p class="hero-lead">{lead}</p>
+  </div>
+</section>
