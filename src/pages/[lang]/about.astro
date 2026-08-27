@@ -1,7 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import Hero from '../../components/Hero.astro';
-import Orbits from '../../components/Orbits.astro';
 import { copy, langs } from '../../i18n';
 
 export function getStaticPaths() {
@@ -13,38 +12,51 @@ const t = copy[lang].about;
 ---
 
 <Layout lang={lang} page="about">
-  <Hero claim={t.claim} orgName={t.orgName} lead={t.lead} />
+  <Hero claim={t.claim} orgName={copy[lang].orgName} lead={t.lead} />
 
-  <section class="vision">
-    <Orbits class="orbits-vision" />
+  <section class="prose">
     <div class="wrap">
-      <div class="vision-label">{t.visionLabel}</div>
-      <p>{t.vision}</p>
-    </div>
-  </section>
+      {t.intro.map((p) => <p>{p}</p>)}
 
-  <section class="pillars">
-    <div class="wrap">
-      <div>
-        <h2>{t.missionLabel}</h2>
-        <div class="pillar-rule"></div>
-        <p>{t.mission}</p>
-      </div>
-      <div>
-        <h2>{t.workLabel}</h2>
-        <div class="pillar-rule"></div>
-        <p>{t.work}</p>
-      </div>
+      <ol class="levels">
+        {t.levels.map((l) => (
+          <li>
+            <strong>{l.label}</strong> — {l.body}
+          </li>
+        ))}
+      </ol>
+
+      <p>{t.outcomes}</p>
     </div>
   </section>
 
   <section class="contact">
     <div class="wrap">
       <div class="contact-label">{t.contactLabel}</div>
-      <div class="contact-body">
-        <a href={`mailto:${copy[lang].email}`}>{copy[lang].email}</a>
-        <p>{t.contactBody}</p>
+      <div class="contact-grid">
+        {t.contact.map((c) => (
+          <div>
+            <div class="contact-item-label">{c.label}</div>
+            {/* The US address stays LTR even on the Persian page. */}
+            {c.href
+              ? <a href={c.href} dir="ltr">{c.value}</a>
+              : <p dir="ltr">{c.value}</p>}
+          </div>
+        ))}
       </div>
+    </div>
+  </section>
+
+  <section class="notes">
+    <div class="wrap">
+      <div class="notes-label">{t.notesLabel}</div>
+      <ol>
+        {t.notes.map((n) => (
+          <li>
+            <a href={n.url} dir="ltr">{n.text}</a>
+          </li>
+        ))}
+      </ol>
     </div>
   </section>
 </Layout>

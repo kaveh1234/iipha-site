@@ -4,6 +4,8 @@ import '../styles/global.css';
 
 const { lang, page } = Astro.props;
 const t = copy[lang];
+const pages = ['home', 'about', 'mission', 'join', 'donate'];
+const suffix = page === 'home' ? '' : `/${page}`;
 ---
 
 <html lang={lang} dir={t.dir}>
@@ -22,18 +24,21 @@ const t = copy[lang];
   <body>
     <header class="site-header">
       <div class="wrap">
-        <a class="brand" href={path(`/${lang}/about`)}>
+        <a class="brand" href={path(`/${lang}`)}>
           <img src={path('/logo.png')} alt={t.logoAlt} width="40" height="40" />
           <span>{t.brand}</span>
         </a>
         <div class="header-end">
           <nav class="nav">
-            <a href={path(`/${lang}/about`)} aria-current={page === 'about' ? 'page' : null}>{t.nav.about}</a>
-            <a href={path(`/${lang}/donate`)} aria-current={page === 'donate' ? 'page' : null}>{t.nav.donate}</a>
+            {pages.map((p) => (
+              <a href={path(`/${lang}${p === 'home' ? '' : `/${p}`}`)} aria-current={page === p ? 'page' : null}>
+                {t.nav[p]}
+              </a>
+            ))}
           </nav>
           <div class="lang">
-            <a class="en" href={path(`/en/${page}`)} aria-current={lang === 'en' ? 'true' : null}>{t.langLabel.en}</a>
-            <a class="fa" href={path(`/fa/${page}`)} aria-current={lang === 'fa' ? 'true' : null}>{t.langLabel.fa}</a>
+            <a class="en" href={path(`/en${suffix}`)} aria-current={lang === 'en' ? 'true' : null}>{t.langLabel.en}</a>
+            <a class="fa" href={path(`/fa${suffix}`)} aria-current={lang === 'fa' ? 'true' : null}>{t.langLabel.fa}</a>
           </div>
         </div>
       </div>
@@ -47,7 +52,7 @@ const t = copy[lang];
       <div class="wrap">
         <div class="footer-brand">
           <div>{t.brand}</div>
-          <div class="footer-name">{t.footerName}</div>
+          <div class="footer-name">{t.orgName}</div>
         </div>
         <div class="footer-meta">
           <a href={`mailto:${t.email}`}>{t.email}</a>

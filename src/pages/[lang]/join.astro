@@ -1,0 +1,41 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import { copy, langs } from '../../i18n';
+
+export function getStaticPaths() {
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = copy[lang].join;
+---
+
+<Layout lang={lang} page="join">
+  <Hero claim={t.claim} lead={t.lead} />
+
+  <section class="ways">
+    <div class="wrap">
+      <div class="ways-row">
+        {t.ways.map((w) => (
+          <div>
+            <h2><a href={w.url}>{w.label}</a></h2>
+            <p>{w.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="prose">
+    <div class="wrap">
+      <h2 class="prose-heading">{t.detailsLabel}</h2>
+      {t.details.map((d) => (
+        <div class="detail">
+          <h3>{d.label}</h3>
+          <p>{d.body}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,61 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Hero from '../../components/Hero.astro';
+import Orbits from '../../components/Orbits.astro';
+import { copy, langs } from '../../i18n';
+
+export function getStaticPaths() {
+  return langs.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const t = copy[lang].home;
+const secure = copy[lang].secureEmail;
+---
+
+<Layout lang={lang} page="home">
+  <Hero claim={t.claim} lead={t.lead} />
+
+  <section class="pillars">
+    <div class="wrap">
+      {t.blocks.map((b) => (
+        <div>
+          <h2>{b.label}</h2>
+          <div class="pillar-rule"></div>
+          <p>{b.body}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="vision">
+    <Orbits class="orbits-vision" />
+    <div class="wrap">
+      <div class="vision-label">{t.statementLabel}</div>
+      <p>{t.statementTitle}</p>
+      <div class="statement-body">
+        {t.statement.map((s) => <p>{s}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <section class="prose">
+    <div class="wrap">
+      <h2 class="prose-heading">{t.casesLabel}</h2>
+      {t.casesIntro.map((p) => <p>{p}</p>)}
+      <ol class="levels">
+        {t.cases.map((c) => <li>{c}</li>)}
+      </ol>
+      <p>{t.casesNote} <a href={`mailto:${secure}`} dir="ltr">{secure}</a></p>
+    </div>
+  </section>
+
+  <section class="give">
+    <Orbits class="orbits-give" />
+    <div class="wrap">
+      <div class="vision-label">{t.whistleLabel}</div>
+      <p class="give-banner">{t.whistleBody}</p>
+      <a class="give-cta" href={`mailto:${secure}`}>{t.whistleCta}</a>
+    </div>
+  </section>
+</Layout>

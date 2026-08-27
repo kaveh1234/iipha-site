@@ -15,19 +15,6 @@ const t = copy[lang].donate;
 <Layout lang={lang} page="donate">
   <Hero claim={t.claim} lead={t.lead} />
 
-  <section class="ways">
-    <div class="wrap">
-      <div class="ways-row">
-        {t.ways.map((way) => (
-          <div>
-            <h2>{way.label}</h2>
-            <p>{way.body}</p>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-
   <section class="give">
     <Orbits class="orbits-give" />
     <div class="wrap">
