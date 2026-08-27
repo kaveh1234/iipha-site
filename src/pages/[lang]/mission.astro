@@ -17,20 +17,16 @@ const t = copy[lang].mission;
   <section class="prose">
     <div class="wrap">
       {t.body.map((p) => <p>{p}</p>)}
+
+      <h2 class="prose-heading">{t.chaptersLabel}</h2>
+      <p>{t.chapters}</p>
+      <p class="muted">{t.bylaws}</p>
     </div>
   </section>
 
-  <section class="pillars">
+  <section class="media">
     <div class="wrap">
-      <div>
-        <h2>{t.chaptersLabel}</h2>
-        <div class="pillar-rule"></div>
-        <p>{t.chapters}</p>
-        <p class="muted">{t.bylaws}</p>
-      </div>
-      <div>
-        <a class="plain-link" href={t.videoUrl}>{t.videoLabel}</a>
-      </div>
+      <a class="plain-link" href={t.videoUrl}>{t.videoLabel}</a>
     </div>
   </section>
 </Layout>

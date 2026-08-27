@@ -6,7 +6,10 @@
   "secureEmail": "secure@iipha.org",
   "copyright": "© 2026 IIPHA",
   "orgName": "International Independent Physicians and Healthcare Providers Association",
-  "langLabel": { "en": "EN", "fa": "فارسی" },
+  "langLabel": {
+    "en": "EN",
+    "fa": "فارسی"
+  },
   "nav": {
     "home": "Home",
     "about": "About",
@@ -49,8 +52,9 @@
     ],
     "casesNote": "If you have any information or evidence, please send it to us at",
     "whistleLabel": "Dear whistleblower",
-    "whistleBody": "Do you have critical information that can help us shine a light on the atrocities and the breach of health-related human rights in Iran? Whether it concerns arrested health workers, victims of the security forces, abuse of ambulances, misleading death certificates, or any related issue, you can inform us anonymously and securely.",
-    "whistleCta": "Contact us securely"
+    "whistleBody": "Whether it concerns arrested health workers, victims of the security forces, abuse of ambulances, misleading death certificates, or any related issue, you can inform us anonymously and securely.",
+    "whistleCta": "Contact us securely",
+    "whistleQuestion": "Do you have critical information that can help us shine a light on the atrocities and the breach of health-related human rights in Iran?"
   },
   "about": {
     "title": "About — IIPHA",
@@ -61,9 +65,18 @@
       "IIPHA strives to provide a platform to unite and empower the Iranian diaspora civil society in order to collectively address issues pertaining to justice and human rights with a focus on Iranians’ health and well-being, whether residing inside Iran or out. To do so, IIPHA follows a social medicine model [2] by trying to understand Iranians’ health experiences, needs, and expectations, participating in the relevant decision-making processes, and designing and delivering proper interventions aimed at improving their health conditions. As such, IIPHA’s healthcare professionals engage with the health issues of Iranians on three overlapping levels:"
     ],
     "levels": [
-      { "label": "Individual", "body": "addressing direct health needs of patients" },
-      { "label": "Community", "body": "collaborating with various communities, particularly the most disadvantaged groups" },
-      { "label": "Society", "body": "informing policymaking processes and collaborating with the relevant international organizations" }
+      {
+        "label": "Individual",
+        "body": "addressing direct health needs of patients"
+      },
+      {
+        "label": "Community",
+        "body": "collaborating with various communities, particularly the most disadvantaged groups"
+      },
+      {
+        "label": "Society",
+        "body": "informing policymaking processes and collaborating with the relevant international organizations"
+      }
     ],
     "outcomes": "The outcomes of IIPHA’s endeavors will be used to raise awareness and advocate for the improvement of Iranians’ social determinants of health by obtaining an influential voice in the centers of power and international organizations, global affairs, key decision-makers, governmental authorities, and officials, as well as society at large. Moreover, our findings could assist legal investigations on potential human rights violations by the Islamic Republic of Iran, namely the United Nations’ Independent International Fact-Finding Mission on the Islamic Republic of Iran. [3]",
     "notesLabel": "References",
@@ -88,9 +101,20 @@
         "value": "2785 Pacific Coast Hwy, Suite E719\nTorrance, CA 90505 USA",
         "href": "https://www.google.com/maps?q=2785+Pacific+Coast+Hwy+e719,+Torrance,+CA+90505,+USA"
       },
-      { "label": "Message us", "value": "@theiipha" },
-      { "label": "Ask us", "value": "info@iipha.org", "href": "mailto:info@iipha.org" },
-      { "label": "Inform us", "value": "secure@iipha.org", "href": "mailto:secure@iipha.org" }
+      {
+        "label": "Message us",
+        "value": "@theiipha"
+      },
+      {
+        "label": "Ask us",
+        "value": "info@iipha.org",
+        "href": "mailto:info@iipha.org"
+      },
+      {
+        "label": "Inform us",
+        "value": "secure@iipha.org",
+        "href": "mailto:secure@iipha.org"
+      }
     ]
   },
   "mission": {
@@ -144,9 +168,10 @@
     "title": "Donate — IIPHA",
     "claim": "Support our work",
     "lead": "As a not-for-profit organization, we are completely dependent on donations and contributions from the public, as well as membership fees, to cover our expenses — which are mainly the charges for the specialist human rights lawyers working with us.",
-    "banner": "If you are a healthcare provider outside Iran, the best way to help is to become a member. Otherwise, in addition to becoming a volunteer, you can help us by donating as little as $10.",
+    "banner": "If you are a healthcare provider outside Iran, the best way to help is to become a member.",
     "cta": "Donate",
     "ctaUrl": "#donate-link-placeholder",
-    "note": "You may contribute to our funds using PayPal by clicking the button above and following the instructions when the new page opens."
+    "note": "You may contribute to our funds using PayPal by clicking the button above and following the instructions when the new page opens.",
+    "bannerBody": "Otherwise, in addition to becoming a volunteer, you can help us by donating as little as $10."
   }
 }
