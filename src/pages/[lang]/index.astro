@@ -23,21 +23,29 @@ const secure = copy[lang].secureEmail;
           <h2>{b.label}</h2>
           <div class="pillar-rule"></div>
           <p>{b.body}</p>
+          {b.link && <a class="pillar-link" href={b.link.url}>{b.link.label}</a>}
         </div>
       ))}
     </div>
   </section>
 
-  <section class="vision">
-    <Orbits class="orbits-vision" />
-    <div class="wrap">
-      <div class="vision-label">{t.statementLabel}</div>
-      <p>{t.statementTitle}</p>
-      <div class="statement-body">
-        {t.statement.map((s) => <p>{s}</p>)}
+  {t.statements.map((statement) => (
+    <section class="vision">
+      <Orbits class="orbits-vision" />
+      <div class="wrap">
+        <div class="vision-label">{statement.label}</div>
+        <p>{statement.title}</p>
+        <div class="statement-body">
+          {statement.body.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
+        {statement.links.length > 0 && (
+          <div class="statement-links">
+            {statement.links.map((link) => <a href={link.url}>{link.label}</a>)}
+          </div>
+        )}
       </div>
-    </div>
-  </section>
+    </section>
+  ))}
 
   <section class="prose">
     <div class="wrap">

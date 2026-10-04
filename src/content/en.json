@@ -24,19 +24,45 @@
     "blocks": [
       {
         "label": "Outreach to Iran",
-        "body": "IIPHA aims to create a platform that unites and empowers the Iranian diaspora civil society by engaging with the media and obtaining an influential voice in the centres of power and international organizations, global affairs, key decision-makers, governmental authorities, officials, and society at large worldwide. We focus on medical issues related to justice and human rights in Iran."
+        "body": "IIPHA aims to create a platform that unites and empowers the Iranian diaspora civil society by engaging with the media and obtaining an influential voice in the centres of power and international organizations, global affairs, key decision-makers, governmental authorities, officials, and society at large worldwide. We focus on medical issues related to justice and human rights in Iran.",
+        "link": null
       },
       {
         "label": "We provide care",
-        "body": "IIPHA is a non-profit, US-based, non-partisan, and gender-neutral association weathering the worldwide civil social demands on behalf of all its stakeholders and members. It is a civil action and advocacy association composed of healthcare professionals of Iranian heritage."
+        "body": "International Independent Iranian Physician and Healthcare Providers Association (IIPHA) is a non-profit, US-based, non-partisan, and gender-neutral association weathering the worldwide civil social demands on behalf of all its stakeholders and members. IIPHA is a civil action and advocacy association composed of healthcare professionals of Iranian heritage.",
+        "link": null
       }
     ],
-    "statementLabel": "Official statement",
-    "statementTitle": "IIPHA and other social activist groups stand in solidarity with Iranian nurses",
-    "statement": [
-      "Like other parts of Iranian society, nurses have been struggling with numerous social, economic, and professional challenges in recent years. However, none of these overwhelming hardships have prevented nurses from their primary mission.",
-      "Every fellow citizen vividly remembers that during the peak of COVID-19, while the government’s unscientific policies and adherence to superstitious and ideological approaches were exponentially increasing the death rates, it was these devoted healthcare workers who, by sacrificing their own lives and health, strived to reduce the mortality rate of our compatriots.",
-      "Following the recent events in Iran and the protests after the murder of Mahsa Zhina Amini, the United Nations has established an Independent International Fact-Finding Mission (FFMI) to investigate the deteriorating situation of human rights in the Islamic Republic of Iran. The FFMI has invited those whom the Islamic Republic has harmed to send evidence of human rights violations to this group."
+    "statements": [
+      {
+        "label": "Commemoration",
+        "title": "The Independent International Independent Physicians and Healthcare Providers Association (IIPHA), alongside other health solidarity groups, commemorates the anniversary of Mahsa Jina Amini",
+        "body": [
+          "The Independent Global Association of Physicians and Healthcare Workers, together with other health solidarity groups, commemorates the anniversary of Mahsa Jina Amini, a daughter of Iran, whose name has become the watchword of one of the world’s most progressive movements for freedom: the “Woman Life Freedom” movement.",
+          "We reaffirm our commitment to documenting and following up on human rights violations within Iran’s healthcare system, and to raising health awareness among our fellow Iranians.",
+          "May the winds of freedom blow across a prosperous and united Iran of tomorrow."
+        ],
+        "links": [
+          {
+            "label": "#WomanLifeFreedom",
+            "url": "https://x.com/hashtag/WomanLifeFreedom?src=hashtag_click"
+          },
+          {
+            "label": "#MahsaAmini",
+            "url": "https://x.com/hashtag/MahsaAmini?src=hashtag_click"
+          }
+        ]
+      },
+      {
+        "label": "Official statement",
+        "title": "Official Statement of IIPHA and other social activist groups in Solidarity with Iranian Nurses",
+        "body": [
+          "Like other parts of Iranian society, nurses have been struggling with numerous social, economic, and professional challenges in recent years. However, none of these overwhelming hardships have prevented nurses from their primary mission.",
+          "Every fellow citizen vividly remembers that during the peak of COVID-19, while the government’s unscientific policies and adherence to superstitious and ideological approaches were exponentially increasing the death rates, it was these devoted healthcare workers who, by sacrificing their own lives and health, strived to reduce the mortality rate of our compatriots.",
+          "Following the recent events in Iran and the protests after the murder of Mahsa Zhina Amini, the United Nations has established an Independent International Fact-Finding Mission (FFMI) to investigate the deteriorating situation of human rights in the Islamic Republic of Iran. The FFMI has invited those whom the Islamic Republic has harmed to send evidence of human rights violations to this group."
+        ],
+        "links": []
+      }
     ],
     "casesLabel": "We are dedicated to our mission",
     "casesIntro": [
@@ -59,7 +85,7 @@
   "about": {
     "title": "About — IIPHA",
     "claim": "IIPHA strives to provide a platform to unite and empower the Iranian diaspora civil society",
-    "lead": "A non-profit, US-based, non-partisan, gender-neutral association composed of healthcare professionals of Iranian heritage — registered in California under section 501(c)(3), EIN 92-1415767.",
+    "lead": "International Independent Physicians and Healthcare Providers Association (IIPHA) is a not-for-profit US-based association, registered in California under section 501(c)(3) with EIN 92-1415767. It is non-partisan, gender-neutral, and composed of healthcare professionals of Iranian heritage.",
     "intro": [
       "IIPHA is a civil action and advocacy association that aims to address Iranians’ social determinants of health on behalf of all its stakeholders and members. This particularly includes tackling systems that shape the conditions of daily life for people, including “economic policies and systems, development agendas, social norms, social policies and political systems.” [1]",
       "IIPHA strives to provide a platform to unite and empower the Iranian diaspora civil society in order to collectively address issues pertaining to justice and human rights with a focus on Iranians’ health and well-being, whether residing inside Iran or out. To do so, IIPHA follows a social medicine model [2] by trying to understand Iranians’ health experiences, needs, and expectations, participating in the relevant decision-making processes, and designing and delivering proper interventions aimed at improving their health conditions. As such, IIPHA’s healthcare professionals engage with the health issues of Iranians on three overlapping levels:"
@@ -79,6 +105,10 @@
       }
     ],
     "outcomes": "The outcomes of IIPHA’s endeavors will be used to raise awareness and advocate for the improvement of Iranians’ social determinants of health by obtaining an influential voice in the centers of power and international organizations, global affairs, key decision-makers, governmental authorities, and officials, as well as society at large. Moreover, our findings could assist legal investigations on potential human rights violations by the Islamic Republic of Iran, namely the United Nations’ Independent International Fact-Finding Mission on the Islamic Republic of Iran. [3]",
+    "closing": [
+      "Our vision is to cultivate a cohesive community that offers unique opportunities to contribute to humanitarian and professional assistance, especially after disasters with respect to Iran. Our mission is to monitor, supervise and pertain to healthcare standards and leverage action plans for its objectives. IIPHA is committed to promoting healthcare excellence and fostering professional innovation for its members and Iranian societies in the diaspora and homeland.",
+      "This association will establish affiliate branches in each country. Each affiliation or sister branch will be named based on the country — for example, IIPHA Canada, IIPHA USA, IIPHA UK, and so on. Each chapter is capable of independently managing its internal affairs. For further information, please refer to IIPHA’s bylaws."
+    ],
     "notesLabel": "References",
     "notes": [
       {
@@ -120,7 +150,7 @@
   "mission": {
     "title": "Our mission — IIPHA",
     "claim": "Our mission",
-    "lead": "IIPHA is a US-registered nonprofit, nonpartisan, and gender-inclusive organization that works on behalf of its members and supporters to advance universal civil and humanitarian causes. It is an association of healthcare professionals of Iranian heritage engaged in advocacy and civic action.",
+    "lead": "The Independent International Physicians and Healthcare Professionals Association (IIPHA) is a U.S.-registered nonprofit, nonpartisan, and gender-inclusive organization that works on behalf of its members and supporters to advance universal civil and humanitarian causes. IIPHA is an association of Iranian healthcare professionals, including those of Iranian heritage, engaged in advocacy and civic action.",
     "body": [
       "IIPHA strives to create a platform that promotes solidarity and empowers the Iranian community abroad. We pursue this goal by engaging with and influencing the media, developing a strong and effective voice within centers of power, international institutions and networks, and reaching policymakers, government officials, and the international community on issues related to justice, human rights, and healthcare.",
       "Our aim is to build a cohesive network capable of creating unique opportunities for humanitarian and medical assistance, particularly in response to recent crises in Iran. Our mission includes monitoring health and healthcare standards, maintaining meaningful engagement in these areas, and developing practical plans to achieve our objectives."
@@ -129,12 +159,12 @@
     "chapters": "The association will establish affiliated chapters in other countries. Each chapter or affiliated group will be named according to the country in which it operates — for example, IIPHA Canada, IIPHA UK, IIPHA USA, and so forth. Each chapter will have the authority to make independent decisions regarding its internal affairs.",
     "bylaws": "For more information, please refer to IIPHA’s bylaws.",
     "videoLabel": "Watch on YouTube",
-    "videoUrl": "https://www.youtube.com/watch?v=mi6tphPJ9Js"
+    "videoUrl": "https://www.youtube.com/watch?v=mi6tphPJ9Js&t=6s"
   },
   "join": {
     "title": "Join us — IIPHA",
     "claim": "We need your support",
-    "lead": "IIPHA is composed of hard-working volunteers who have another day job, and a family to support — just like you. But we cannot operate without your help. There are many ways you can help us, such as spreading the word. Specifically, you can support us in these three ways:",
+    "lead": "Which dot is going to be you? IIPHA is composed of hard-working volunteers who have another day job and a family to support — just like you. But we cannot operate without your help. There are many ways you can help us, such as spreading the word. Specifically, you can support us in these three ways:",
     "ways": [
       {
         "label": "Become a member",
@@ -156,11 +186,11 @@
     "details": [
       {
         "label": "Members",
-        "body": "Join the IIPHA community and make a difference. As a member, you will have the opportunity to be actively involved in the life of our organization and participate in our general assemblies, where you can share your ideas and make your voice heard. Your membership fees and donations are essential for us as a non-profit organization to continue our work and cover our expenses. Our task forces are led by dedicated volunteers, just like you, who are passionate about making a positive impact in Iran."
+        "body": "Join the IIPHA community and make a difference. As a member, you will have the opportunity to be actively involved in the life of our organization and participate in our general assemblies, where you can share your ideas and make your voice heard. Your membership fees and donations are essential for us as a non-profit organization to continue our work and cover our expenses. Our task forces are led by dedicated volunteers, just like you, who are passionate about making a positive impact in Iran. We welcome you to join us in building a brighter future for Iran through the promotion of public health and safety."
       },
       {
         "label": "Volunteers",
-        "body": "A large number of Iranians inside and outside the country have been looking for a way to help their fellow citizens. If you are one of these people, IIPHA invites you to use your skills to help protect the lives, safety and health of Iranian citizens. Alternatively, by providing us your email, you register as an advocate and will receive our free newsletter."
+        "body": "During the past few months, a large number of Iranians inside and outside the country have been looking for a way to help their fellow citizens. If you are one of these people, IIPHA invites you to use your skills to help protect the lives, safety and health of Iranian citizens. If you would like to volunteer to help IIPHA, please choose one or more of the available options. Alternatively, by providing us with your email, you can register as an advocate and receive our free newsletter."
       }
     ]
   },
@@ -170,7 +200,7 @@
     "lead": "As a not-for-profit organization, we are completely dependent on donations and contributions from the public, as well as membership fees, to cover our expenses — which are mainly the charges for the specialist human rights lawyers working with us.",
     "banner": "If you are a healthcare provider outside Iran, the best way to help is to become a member.",
     "cta": "Donate",
-    "ctaUrl": "#donate-link-placeholder",
+    "ctaUrl": "https://www.paypal.com/donate/?hosted_button_id=3NVGUDWZB9XC2",
     "note": "You may contribute to our funds using PayPal by clicking the button above and following the instructions when the new page opens.",
     "bannerBody": "Otherwise, in addition to becoming a volunteer, you can help us by donating as little as $10."
   }
